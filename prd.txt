@@ -1,0 +1,504 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+# AI SOFTWARE ENGINEERING ASSISTANT
+
+---
+
+# 1. Product Overview
+
+## Product Name
+
+AI Software Engineering Assistant
+
+## Product Type
+
+Web-based AI developer tool with GPT-style interaction.
+
+## Core Purpose
+
+Provide developers with an intelligent assistant capable of:
+
+* Bug detection and fixes
+* Code review
+* Complexity analysis
+* Optimization
+* Code explanation
+* Language conversion
+* Test generation
+* Interview training
+
+All delivered through a minimal premium interface inspired by Nothing brand aesthetics.
+
+---
+
+# 2. Design Vision
+
+The interface must feel:
+
+* Futuristic
+* Minimal
+* Premium
+* High-tech
+* Clean
+* Developer-focused
+
+Design Inspiration Sources:
+
+* Nothing Phone UI
+* Apple Human Interface
+* OpenAI ChatGPT
+* Linear.app
+* Vercel dashboard
+
+The product should look like a **premium AI SaaS tool**.
+
+---
+
+# 3. Color System (Strict Monochrome)
+
+Only grayscale allowed.
+
+Primary Colors:
+
+* Background Primary: #000000
+* Background Secondary: #0A0A0A
+* Surface: #111111
+* Border: rgba(255,255,255,0.15)
+* Border Strong: rgba(255,255,255,0.30)
+* Text Primary: #FFFFFF
+* Text Secondary: rgba(255,255,255,0.65)
+* Text Muted: rgba(255,255,255,0.45)
+
+No colored accents allowed.
+
+Hover and focus states must use:
+
+* White glow
+* Brightness changes
+* Border intensity changes
+
+---
+
+# 4. Typography System
+
+Primary Font:
+
+* Inter / Satoshi / General Sans (modern sans-serif)
+
+Accent Font (optional):
+
+* Dot-matrix or Nothing-style font for headings
+
+Typography Scale:
+
+* Hero Title: 64px — Bold
+* Section Title: 36px — SemiBold
+* Subheading: 20px — Medium
+* Body: 16px — Regular
+* Caption: 14px — Light
+* Small UI: 12px
+
+Line height:
+
+* Headings: 1.1
+* Body: 1.6
+
+Letter spacing:
+
+* Slight tracking for futuristic feel.
+
+---
+
+# 5. Spacing & Layout System
+
+Spacing Scale:
+
+* 4px base grid system
+
+Common spacing:
+
+* XS: 4px
+* SM: 8px
+* MD: 16px
+* LG: 24px
+* XL: 40px
+* XXL: 64px
+* Section Gap: 120px
+
+Container Width:
+
+* Max width: 1200px
+* Center aligned
+
+---
+
+# 6. Borders & Radius
+
+Border Style:
+
+* Thin minimal borders
+* 1px rgba(255,255,255,0.15)
+
+Radius:
+
+* Small: 8px
+* Medium: 14px
+* Large: 20px
+* Pills: 999px
+
+---
+
+# 7. Shadows & Glow
+
+No colored shadows.
+
+Allowed effects:
+
+* White glow
+* Soft blur shadows
+* Inner glow for focus states
+
+Example:
+
+box-shadow: 0 0 20px rgba(255,255,255,0.08)
+
+---
+
+# 8. Background Elements
+
+Decorative patterns allowed:
+
+* Dotted grid
+* Subtle noise texture
+* Faint radial gradient
+* Thin divider lines
+
+Must remain minimal and low opacity.
+
+---
+
+# 9. Animation System
+
+Animation Style:
+
+* Smooth
+* Subtle
+* Premium
+* Physics-based easing
+
+Allowed Animations:
+
+* Fade in
+* Slide up
+* Scale hover
+* Border glow
+* Underline expand
+* Typing cursor blink
+
+Timing:
+
+* Fast: 150ms
+* Normal: 250ms
+* Slow: 400ms
+
+Library suggestion:
+
+* Framer Motion
+
+---
+
+# 10. Component Design System
+
+## Buttons
+
+Primary Button:
+
+* White border
+* Transparent background
+* Hover → white background + black text
+
+Secondary Button:
+
+* Subtle border
+* Light glow hover
+
+Icon Button:
+
+* Circular or rounded square
+* Thin border
+
+---
+
+## Cards
+
+Style:
+
+* Dark surface
+* Thin border
+* Rounded corners
+* Glow on hover
+
+Padding:
+
+* 20px–28px
+
+---
+
+## Inputs
+
+GPT-style textarea:
+
+* Rounded corners
+* Dark background
+* White border
+* Glow on focus
+
+Placeholder text muted.
+
+---
+
+## Dropdown
+
+Feature selector dropdown:
+
+* Dark surface
+* White border
+* Hover highlight
+* Smooth open animation
+
+---
+
+## Code Blocks
+
+Monochrome syntax highlighting:
+
+* White
+* Light gray
+* Medium gray
+
+No colors.
+
+---
+
+# 11. Navigation System
+
+Navbar:
+
+* Transparent or dark
+* Sticky on scroll
+* Blur background optional
+* Logo left
+* Links right
+
+Hover:
+
+* Underline animation
+* Glow text
+
+---
+
+# 12. Pages Specification
+
+---
+
+# 12.1 Landing Page
+
+## Goal
+
+Convert visitors into users.
+
+Sections:
+
+1. Navbar
+2. Hero
+3. Features
+4. How it Works
+5. Code Preview
+6. Testimonials
+7. Footer
+
+Hero includes:
+
+* Large headline
+* Subtitle
+* GPT input preview
+* Feature dropdown preview
+* CTA buttons
+
+Background:
+
+* Animated dotted grid.
+
+---
+
+# 12.2 Chat Interface
+
+Primary product screen.
+
+Layout:
+
+Top navbar
+Conversation area
+Input section bottom
+
+Features:
+
+* Message bubbles
+* Markdown rendering
+* Code blocks
+* Copy button
+* Typing indicator
+* Feature dropdown
+
+---
+
+# 12.3 Dashboard
+
+Layout:
+
+Left sidebar navigation
+Main content area
+
+Widgets:
+
+* Code health score
+* Recent activity
+* Usage statistics
+* Quick actions
+
+Graphs:
+
+* White line charts only.
+
+---
+
+# 12.4 Feature Selection Panel
+
+Grid of feature cards:
+
+* Bug Fix
+* Code Review
+* Explain Code
+* Complexity Analysis
+* Optimize
+* Convert
+* Tests
+* Interview Mode
+
+Hover glow effect.
+
+---
+
+# 12.5 Code Editor Interface
+
+Layout:
+
+Top bar
+Left file explorer
+Center editor
+Right AI panel
+Bottom terminal
+
+Features:
+
+* Line numbers
+* Suggestions panel
+* Before vs After comparison
+* Score indicator
+
+Editor:
+
+* Monaco editor recommended.
+
+---
+
+# 12.6 Authentication Pages
+
+Login and Signup.
+
+Minimal layout:
+
+* Centered card
+* Input fields
+* CTA button
+
+---
+
+# 13. Core AI Features
+
+1. Bug Fixer
+2. Code Reviewer
+3. Explain Code
+4. Complexity Analyzer
+5. Optimize Code
+6. Convert Language
+7. Test Generator
+8. Interview Mode
+
+Each feature must use dedicated prompts.
+
+---
+
+# 14. Extra UI Features
+
+* Code health score meter
+* Download PDF report
+* Copy buttons
+* Error highlighting
+* Responsive layout
+* Dark mode default
+
+---
+
+# 15. Technical Architecture
+
+Frontend:
+
+* React / Next.js
+* Tailwind
+* Framer Motion
+* Monaco Editor
+
+Backend:
+
+* Node.js + Express
+
+AI:
+
+* OpenRouter API
+
+Database:
+
+* MongoDB (optional)
+
+---
+
+# 16. User Flow
+
+Landing → Signup → Dashboard → Chat → Results → Save
+
+---
+
+# 17. Future Roadmap
+
+* GitHub Repo Analyzer
+* Code Evolution Tracker
+* Voice debugging
+* Screenshot to code explanation
+* Real-time editor assistant
+
+---
+
+# 18. Success Metrics
+
+* Engagement time
+* Feature usage
+* Retention
+* AI accuracy
+* Performance speed
+
+---
+
+# 19. Positioning Statement
+
+A premium AI-powered software engineering assistant that integrates debugging, review, optimization, testing, and learning into one intelligent workspace with a futuristic minimal interface.

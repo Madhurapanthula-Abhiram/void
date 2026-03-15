@@ -1,0 +1,145 @@
+.staggered-menu-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+.sm-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 4px;
+    /* Reduced padding */
+    transition: opacity 0.3s ease;
+    user-select: none;
+}
+
+.sm-toggle:hover {
+    opacity: 0.7;
+}
+
+.sm-user-avatar {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.sm-plus {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.sm-prelayers {
+    position: absolute;
+    top: calc(100% + 8px);
+    /* Reduced space */
+    right: 0;
+    width: 200px;
+    /* Smaller width */
+    height: auto;
+    min-height: 140px;
+    /* Reduced min-height */
+    pointer-events: none;
+    z-index: 1001;
+    overflow: hidden;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.sm-prelayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.staggered-menu-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    /* Reduced space */
+    right: 0;
+    width: 200px;
+    /* Smaller width */
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    /* Denser padding */
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    z-index: 1002;
+    transform-origin: top right;
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.sm-panel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sm-panel-itemWrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sm-panel-item {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    /* Smaller font */
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.sm-panel-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #FFFFFF;
+}
+
+.sm-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.sm-panel-itemLabel {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Ensure the dropdown is above the grid background but below any extra-high overlays */
+.staggered-menu-wrapper {
+    z-index: 1100;
+}

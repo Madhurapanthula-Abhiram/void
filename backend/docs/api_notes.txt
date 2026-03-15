@@ -1,0 +1,24 @@
+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
+open router void 
+
+
+Top Free Models on OpenRouter (March 2026)
+🥇 Best for Coding (Your Primary Use Case)
+Model IDContextStrengthsqwen/qwen3-coder:free262K🔥 #1 free coding model, SOTA code genopenai/gpt-oss-120b:free131KOpenAI open-weight, tool use, strong reasoningmeta-llama/llama-3.3-70b-instruct:free128KGPT-4 level general + coding
+🥈 Best for Reasoning (Bug Fixing, Complexity Analysis)
+Model IDContextStrengthsarcee-ai/trinity-large-preview:free131KReasoning + tools, frontier-scaleqwen/qwen3-next-80b-a3b-instruct:free262KFast, no thinking traces, great for agents
+🥉 Best Balanced / Fast (Good for all 8 features)
+Model IDContextStrengthsmistralai/mistral-small-3.1-24b-instruct:free128KVision + tools, very fastgoogle/gemma-3-27b-it:free131KGoogle quality, vision + toolsnvidia/nemotron-3-nano-30b-a3b:free256KNVIDIA, fast, tool support
+
+🎯 My Recommendation for Your App
+For the 8 features shown (Bug Fixer, Code Reviewer, Explain Code, Optimizer, Language Converter, Test Generator, Interview Mode, Complexity Analyzer):
+Primary model: qwen/qwen3-coder:free — best free coding model with 262K context
+Fallback model: meta-llama/llama-3.3-70b-instruct:free — reliable and well-rounded
+
+⚠️ Rate Limits (All Free Models)
+
+20 requests/minute
+200 requests/day
+No credit card needed
+API is fully OpenAI-compatible — just change the base URL to https://openrouter.ai/api/v1
+
