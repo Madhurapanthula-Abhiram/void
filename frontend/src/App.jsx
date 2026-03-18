@@ -166,15 +166,21 @@ const LiveCodeVisualization = () => {
   const currentLines = phase === 'after' ? afterCode : beforeCode;
 
   return (
-    <div className="visualization-container" key={key}>
+    <div className="visualization-container">
       <div className="visualization-header-meta">
-        <h2 className="visualization-title">
-          DIFF_VISUALIZATION<span className="blinking-cursor">_</span>
-        </h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="visualization-title"
+        >
+          <ShuffleText text="DIFF_VISUALIZATION" /><span className="blinking-cursor">_</span>
+        </motion.h2>
         <span className="visualization-subtitle">AI CODE EVOLUTION ENGINE</span>
       </div>
 
-      <div className={`editor-window phase-${phase}`}>
+      <div className={`editor-window phase-${phase}`} key={key}>
         {phase === 'scanning' && (
           <div className="scanning-overlay">
             <div className="scanning-animation-center">
