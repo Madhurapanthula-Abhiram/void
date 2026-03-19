@@ -29,6 +29,7 @@ import GsapScramble from './components/ScrambledText';
 import ClickSpark from './components/ClickSpark';
 import FloatingDock from './components/FloatingDock';
 import StaggeredMenu from './components/StaggeredMenu';
+import SplitText from './components/SplitText';
 import { supabase } from './lib/supabase';
 
 
@@ -416,8 +417,26 @@ function App() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="hero-title"
         >
-          ENGINEERING INTELLIGENCE
-          <span className="accent">FOR THE NEXT PROTOCOL</span>
+          {isLoggedIn ? (
+            <SplitText
+              text={`WELCOME BACK, ${user?.user_metadata?.username?.toUpperCase() || user?.user_metadata?.display_name?.toUpperCase() || user?.email?.split('@')[0].toUpperCase() || 'ENGINEER'}`}
+              delay={50}
+              duration={1.25}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+              tag="span"
+            />
+          ) : (
+            <>
+              ENGINEERING INTELLIGENCE
+              <span className="accent">FOR THE NEXT PROTOCOL</span>
+            </>
+          )}
         </motion.h1>
 
         <motion.div
