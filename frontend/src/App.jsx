@@ -461,7 +461,7 @@ function App() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="hero-actions"
         >
-          <button className="btn btn-primary interactive">
+          <button className="btn btn-primary interactive" onClick={() => navigate('/login')}>
             GET STARTED <ArrowRight size={18} />
           </button>
           <button className="btn btn-secondary interactive">
